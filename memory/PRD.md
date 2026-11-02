@@ -31,6 +31,7 @@ Build a new interactive personal portfolio called "Aditya, Out Loud" for Aditya 
 8. A11y: keyboard nav, aria-expanded/controls, focus rings, reduced motion — DONE (v1)
 
 ## Backlog (P0/P1/P2)
-- P0: Run the five-student growth pilot and document what actually happened (keep "Not yet run" until then)
+- P0: Backup to GitHub — code committed locally as one clean commit (no .env files in history); push to github.com/aditya052003 pending the user connecting GitHub via the platform's Save → Save to GitHub flow (token card was skipped)
+- P0: Run the five-student growth pilot and document what actually happened (keep "Proposed — not yet tested" until then)
 - P1: Fresh "What I checked" screenshot for the See frame (current frame predates the rename); final proofread before submitting
 - P2: Subtle page-load sound toggle, dark "print" variant, analytics-free simplicity preserved
