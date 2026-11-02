@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --background: 36 50% 93%;
+        --foreground: 21 28% 10%;
+        --card: 41 55% 96%;
+        --card-foreground: 21 28% 10%;
+        --popover: 41 55% 96%;
+        --popover-foreground: 21 28% 10%;
+        --primary: 19 92% 48%;
+        --primary-foreground: 36 60% 97%;
+        --secondary: 36 33% 87%;
+        --secondary-foreground: 21 28% 10%;
+        --muted: 36 33% 88%;
+        --muted-foreground: 28 15% 40%;
+        --accent: 19 92% 48%;
+        --accent-foreground: 36 60% 97%;
+        --destructive: 0 72% 45%;
+        --destructive-foreground: 36 60% 97%;
+        --border: 31 22% 82%;
+        --input: 31 22% 82%;
+        --ring: 19 92% 48%;
+        --radius: 1rem;
+    }
+
+    * {
+        @apply border-border;
+    }
+
+    html {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+        @apply bg-background text-foreground font-sans;
+        background-image: radial-gradient(
+            rgba(32, 24, 18, 0.035) 1px,
+            transparent 1px
+        );
+        background-size: 26px 26px;
+    }
+
+    ::selection {
+        background: #e8500a;
+        color: #fff7ec;
+    }
+
+    :focus-visible {
+        outline: 2px solid #e8500a;
+        outline-offset: 3px;
+        border-radius: 6px;
+    }
+
+    section {
+        scroll-margin-top: 84px;
+    }
+}
+
+/* Lenis smooth-scroll base */
+html.lenis,
+html.lenis body {
+    height: auto;
+}
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+/* Placeholder chips: clearly labelled, never disguised as real content */
+.ph {
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: 0.82em;
+    font-style: normal;
+    color: #8a5a2b;
+    background: rgba(232, 80, 10, 0.07);
+    border: 1px dashed rgba(232, 80, 10, 0.45);
+    border-radius: 0.5rem;
+    padding: 0.12em 0.5em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+.ph-dark {
+    color: rgba(246, 239, 227, 0.75);
+    background: rgba(246, 239, 227, 0.06);
+    border-color: rgba(246, 239, 227, 0.35);
+}
+
+/* Grain overlay */
+.grain {
+    position: fixed;
+    inset: 0;
+    z-index: 40;
+    pointer-events: none;
+    mix-blend-mode: multiply;
+    opacity: 0.55;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Animated waveform bars */
+@keyframes wavepulse {
+    0%,
+    100% {
+        transform: scaleY(0.3);
+    }
+    50% {
+        transform: scaleY(1);
+    }
+}
+.wavebar {
+    transform-origin: center;
+    animation: wavepulse 1.5s ease-in-out infinite;
+    animation-delay: calc(var(--i) * 0.09s);
+}
+
+/* Editorial marquee */
+.marquee-track {
+    display: flex;
+    width: max-content;
+    animation: marquee 48s linear infinite;
+}
+@keyframes marquee {
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Skip link */
+.skip-link {
+    position: fixed;
+    top: -48px;
+    left: 16px;
+    z-index: 100;
+    background: #201812;
+    color: #f6efe3;
+    padding: 8px 16px;
+    border-radius: 999px;
+    transition: top 0.2s ease;
+}
+.skip-link:focus {
+    top: 12px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+    .wavebar,
+    .marquee-track {
+        animation: none !important;
+    }
+}
+
+/* Fullscreen evidence viewing */
+img:fullscreen,
+video:fullscreen {
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    background: #000;
+    border: none;
+    border-radius: 0;
+}

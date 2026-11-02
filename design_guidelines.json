@@ -1,0 +1,143 @@
+{
+  "project_name": "Aditya, Out Loud - Wispr Flow Growth Internship Portfolio",
+  "app_type": "portfolio",
+  "archetype": "ORGANIC_EDITORIAL_VOICE_TECH",
+  "theme": {
+    "mode": "light_warm_cream",
+    "background": "#FDFBF7",
+    "surface_card": "#FAF6F0",
+    "surface_card_border": "#E8E2D8",
+    "text_primary": "#1F1E1B",
+    "text_secondary": "#57534E",
+    "text_muted": "#78716C",
+    "accent_primary": "#EA580C",
+    "accent_primary_hover": "#C2410C",
+    "accent_light": "#FFEDD5",
+    "accent_secondary": "#0284C7",
+    "dark_mode_bg": "#121110",
+    "dark_mode_card": "#1C1A17",
+    "dark_mode_text": "#F5F5F4"
+  },
+  "typography": {
+    "heading_font": "Plus Jakarta Sans, Outfit, sans-serif",
+    "body_font": "Inter, system-ui, sans-serif",
+    "mono_font": "JetBrains Mono, Menlo, monospace",
+    "hierarchy": {
+      "h1_hero": "text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-[1.1]",
+      "h2_section": "text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-stone-900",
+      "h3_card": "text-xl sm:text-2xl font-semibold tracking-tight text-stone-800",
+      "body": "text-base sm:text-lg leading-relaxed text-stone-700",
+      "mono_label": "font-mono text-xs uppercase tracking-widest text-orange-600 font-semibold",
+      "caption": "text-xs sm:text-sm text-stone-500"
+    }
+  },
+  "layout_and_spacing": {
+    "container_max_width": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "section_padding": "py-16 sm:py-24 lg:py-32",
+    "gap_strategy": "gap-6 sm:gap-8 lg:gap-12",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-6",
+    "card_padding": "p-6 sm:p-8"
+  },
+  "key_sections": [
+    {
+      "section_id": "hero",
+      "title": "Welcoming Introduction - Aditya, Out Loud",
+      "elements": [
+        "Headline: 'Aditya, Out Loud.' with animated line reveal",
+        "Subheadline highlighting application for Wispr Flow growth internship",
+        "CTA Button 1: 'Explore my work' (smooth scroll to projects)",
+        "CTA Button 2: 'How I built this' (opens build story / architecture dialog)",
+        "Voice-themed interactive soundwave visual canvas (dynamic audio bars reacting to mouse hover/toggle, no photo hero)",
+        "Live status badge: 'Applying for Wispr Flow Growth Internship'"
+      ]
+    },
+    {
+      "section_id": "marquee",
+      "title": "Editorial Ribbon Marquee",
+      "elements": [
+        "Slow drifting ticker with text: 'WISPR FLOW GROWTH INTERNSHIP • VOICE-FIRST THINKING • ADITYA RAUT • IDEAS AT THE SPEED OF SOUND •'",
+        "Low-contrast warm background ribbon with orange highlight dots"
+      ]
+    },
+    {
+      "section_id": "projects",
+      "title": "Three Project Cards (Expandable)",
+      "elements": [
+        "3 distinct interactive cards with accordion/modal expansion",
+        "Key details in expanded state: Problem statement, My Contribution, Key Decision Made, What I Learned, Evidence Links",
+        "Keyboard accessible triggers and clear tags"
+      ]
+    },
+    {
+      "section_id": "hear-it-see-it",
+      "title": "Hear it. See it. (Spoken Build Instruction Pairing)",
+      "elements": [
+        "Interactive custom audio player (Play/Pause, Scrub timeline, Speed toggle)",
+        "CRITICAL: User-controlled playback ONLY, strictly NO autoplay",
+        "Paired UI window showing the resulting feature built from spoken prompt",
+        "Interactive Transcript Panel with toggle show/hide and highlighted timecodes",
+        "Revision notes explaining iteration from audio prompt to interface"
+      ]
+    },
+    {
+      "section_id": "growth-experiments",
+      "title": "Growth Experiment Showcase",
+      "elements": [
+        "Structured experiment card: Question Tested, What I Did, Actual Feedback Received, What I Changed / Next Steps",
+        "Visual metric counters and feedback quote bubbles"
+      ]
+    },
+    {
+      "section_id": "workspace",
+      "title": "Interactive Workspace Setup ($3,000 Proposed Setup)",
+      "elements": [
+        "Interactive grid / equipment room visual featuring voice-first tools",
+        "Items: MacBook M3 Pro, Shure SM7B Mic + Boom Arm, 4K Ultrawide Monitor, Herman Miller Aeron Chair, Acoustic Treatment & Audio Interface, Wispr Flow Pro License",
+        "Clicking an item highlights it and reveals its purpose, voice productivity impact, and estimated cost tagged explicitly as '[cost TBD]'",
+        "Budget allocation summary bar visualizing the $3,000 proposed breakdown"
+      ]
+    },
+    {
+      "section_id": "contact",
+      "title": "Contact & Logistics Section",
+      "elements": [
+        "LinkedIn link placeholder with clearly labeled '[LinkedIn URL Placeholder]'",
+        "Joining Availability placeholder labeled '[Availability Placeholder - e.g. Immediate / June 2026]'",
+        "Bangalore Travel / Relocation Preference placeholder labeled '[Bangalore Preference Placeholder]'",
+        "Interactive message dialog / quick response form"
+      ]
+    }
+  ],
+  "components_and_ui": {
+    "nav": "Slim sticky top bar with backdrop-blur-md bg-stone-50/80 dark:bg-stone-900/80, brand badge 'Aditya, Out Loud', section scroll anchors, mobile drawer menu",
+    "buttons": "Pill or rounded-xl buttons with subtle hover lift (-translate-y-0.5), focus-visible ring-2 ring-orange-500, active click scale-95",
+    "cards": "Subtle border (border-stone-200), warm background (#FAF6F0), smooth shadow-sm hover:shadow-md transition-all",
+    "audio_player": "Custom waveform seekbar, play/pause button with aria-label, duration display, transcript toggle drawer",
+    "badges": "Rounded-full px-3 py-1 text-xs font-mono font-medium border border-orange-200 bg-orange-50 text-orange-700"
+  },
+  "media_assets": {
+    "workspace_mic_image": "https://images.unsplash.com/photo-1660631228116-b3643559f611?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwyfHxhdWRpbyUyMFN0dWRpbyUyMG1pY3JvcGhvbmUlMjBkZXNrfGVufDB8fHx8MTc5MzU0ODUxOXww&ixlib=rb-4.1.0&q=85",
+    "studio_setup_image": "https://images.unsplash.com/photo-1601856254555-a9c0ebef8af3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzNDR8MHwxfHNlYXJjaHwxfHxjb250ZW50JTIwY3JlYXRvciUyMHdvcmtzcGFjZSUyMGRlc2slMjBzZXR1cCUyMHN0dWRpbyUyMG1pY3JvcGhvbmV8ZW58MHx8fHwxNzkzMTMyMDgzfDA&ixlib=rb-4.1.0&q=85"
+  },
+  "motion_and_interactions": {
+    "lenis_scroll": "Smooth momentum scrolling enabled",
+    "framer_motion": "Staggered scroll-triggered fade-ups (y: 20 -> 0, opacity: 0 -> 1)",
+    "soundwave_canvas": "Interactive animated bars with custom frequency wave simulator",
+    "reduced_motion": "Respect prefers-reduced-motion CSS query by disabling transform animations"
+  },
+  "accessibility_and_testing": {
+    "data_testid_rule": "Every interactive element (buttons, cards, audio controls, input fields, accordion triggers, tab buttons) MUST include a unique data-testid attribute in kebab-case format.",
+    "aria_labels": "All audio controls, mobile menu toggles, and icon-only buttons must have descriptive aria-label attributes.",
+    "no_autoplay": "Audio element MUST NOT have autoplay attribute under any circumstances."
+  },
+  "instructions_to_main_agent": [
+    "Build standard React .js / .jsx components (not .tsx).",
+    "Use warm cream palette (#FDFBF7) with rich dark charcoal text (#1F1E1B) and warm energetic orange accents (#EA580C).",
+    "Implement the voice-themed soundwave hero visual using SVG/Canvas with interactive frequency wave animations.",
+    "Ensure all project cards expand smoothly with complete details (Problem, Contribution, Decision, Learning, Links).",
+    "Include full audio player functionality with transcript panel toggle and step-by-step revision explanation.",
+    "Make sure all workspace setup items display '[cost TBD]' as required by user instructions.",
+    "Clearly label all missing logistics items ([LinkedIn Placeholder], [Availability Placeholder], [Bangalore Preference Placeholder]).",
+    "Ensure data-testid is attached to all buttons, links, inputs, and clickable elements."
+  ]
+}
